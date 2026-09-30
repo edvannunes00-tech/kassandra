@@ -37,13 +37,13 @@ img{max-width:100%;display:block}
 .ac-hero-cta{display:flex;align-items:center;gap:14px;margin-top:10px;flex-wrap:wrap}
 .ac-hero-btn{background:linear-gradient(120deg,var(--ac-gold-2),var(--ac-gold));color:var(--ac-green);padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;font-size:14px;white-space:nowrap}
 .ac-hero-note{color:#a3906e;font-size:12.5px}
-.ac-hero-right{position:relative;background:linear-gradient(135deg,#d2a876,#8f5e34)}
-.ac-hero-photo{position:absolute;right:-10%;bottom:-6%;width:220%;max-width:none;transform:rotate(-4deg);filter:drop-shadow(0 14px 22px #00000055)}
+.ac-hero-right{position:relative;background:linear-gradient(135deg,#d2a876,#8f5e34);overflow:hidden}
+.ac-hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 75%}
 
 @media(max-width:620px){
   .ac-hero-card{grid-template-columns:1fr;min-height:0}
-  .ac-hero-right{aspect-ratio:16/11;order:-1}
-  .ac-hero-photo{right:auto;left:50%;bottom:-8%;width:78%;transform:translateX(-46%) rotate(-4deg)}
+  .ac-hero-right{aspect-ratio:16/10;order:-1}
+  .ac-hero-photo{object-position:55% 70%}
   .ac-hero-left{padding:24px 22px 28px;text-align:left}
 }
 .ac-card h2{font-family:"Playfair Display",serif;font-size:25px;color:var(--ac-green);margin-bottom:6px}
