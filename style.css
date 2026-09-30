@@ -30,6 +30,12 @@ h3{font-size:20px;margin-bottom:8px;font-weight:600}
 
 /* header */
 .top{position:sticky;top:0;z-index:50;background:rgba(245,240,230,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+
+.subnav{background:var(--nude);border-bottom:1px solid var(--line)}
+.subnav .wrap{display:flex;gap:20px;flex-wrap:wrap;padding:9px 28px;font-size:12px}
+.subnav a{color:var(--muted);text-decoration:none;white-space:nowrap}
+.subnav a:hover{color:var(--dourado)}
+.subnav a.is-active{color:var(--verde);font-weight:600}
 .top-in{display:flex;align-items:center;justify-content:space-between;height:76px}
 .brand{font-family:var(--serif-alt);font-size:24px;font-style:italic;font-weight:600;color:var(--verde);text-decoration:none;line-height:1.1}
 .brand small{display:block;font:600 10px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--dourado);font-style:normal;margin-top:4px}
