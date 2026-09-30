@@ -32,10 +32,11 @@ h3{font-size:20px;margin-bottom:8px;font-weight:600}
 .top{position:sticky;top:0;z-index:50;background:rgba(245,240,230,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
 
 .subnav{background:var(--nude);border-bottom:1px solid var(--line)}
-.subnav .wrap{display:flex;gap:20px;flex-wrap:wrap;padding:9px 28px;font-size:12px}
-.subnav a{color:var(--muted);text-decoration:none;white-space:nowrap}
-.subnav a:hover{color:var(--dourado)}
-.subnav a.is-active{color:var(--verde);font-weight:600}
+.subnav .wrap{display:flex;gap:8px;overflow-x:auto;padding:10px 20px;font-size:12px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.subnav .wrap::-webkit-scrollbar{display:none}
+.subnav a{color:var(--muted);text-decoration:none;white-space:nowrap;padding:8px 14px;border-radius:999px;border:1px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.subnav a:hover{color:var(--verde);border-color:var(--line)}
+.subnav a.is-active{color:var(--verde);font-weight:600;background:#fff;border-color:var(--line)}
 .top-in{display:flex;align-items:center;justify-content:space-between;height:76px}
 .brand{font-family:var(--serif-alt);font-size:24px;font-style:italic;font-weight:600;color:var(--verde);text-decoration:none;line-height:1.1}
 .brand small{display:block;font:600 10px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--dourado);font-style:normal;margin-top:4px}
