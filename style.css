@@ -119,7 +119,7 @@ h3{font-size:20px;margin-bottom:8px;font-weight:600}
 /* dois caminhos com foto */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .split-card{display:block;text-decoration:none;color:inherit}
-.split-ph{aspect-ratio:4/3;border-radius:4px;background:linear-gradient(155deg,var(--nude) 0%,var(--nude-2) 100%);margin-bottom:18px}
+.split-ph{aspect-ratio:16/10;max-height:240px;border-radius:4px;background:linear-gradient(155deg,var(--nude) 0%,var(--nude-2) 100%);margin-bottom:18px;overflow:hidden}
 .split-card .tag{color:var(--dourado)}
 .split-card p{color:var(--muted);margin:8px 0 12px}
 .split-card .go{font-size:13px;font-weight:600;color:var(--verde);letter-spacing:.02em}
