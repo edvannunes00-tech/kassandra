@@ -133,3 +133,50 @@ footer span{color:#a9b5a9;font-size:12.5px}
  .ctas .btn{flex:1 1 100%;text-align:center}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.a{transition:none}}
+
+/* hub (home) */
+.hub{min-height:100vh;background:radial-gradient(120% 70% at 50% -10%,#1f4530 0%,var(--verde) 55%)}
+.hub-inner{max-width:560px;margin:0 auto;padding:72px 24px 88px;text-align:center}
+.hub-brand{font-family:var(--serif-alt);font-style:italic;font-weight:600;font-size:34px;color:var(--off-white);margin:0}
+.hub-divider{display:flex;align-items:center;gap:14px;justify-content:center;margin:16px 0 22px}
+.hub-divider .ln{height:1px;width:64px;background:var(--dourado);opacity:.6}
+.hub-divider svg{color:var(--dourado);width:16px;height:16px;flex:none}
+.hub-tag{font-size:15px;color:#cfe0d3;max-width:38ch;margin:0 auto 44px;line-height:1.65}
+.hub-links{display:grid;gap:14px}
+.hub-link{display:flex;align-items:center;gap:16px;padding:19px 22px;border-radius:14px;text-decoration:none;text-align:left;transition:transform .2s ease,box-shadow .2s ease}
+.hub-link:hover{transform:translateY(-2px)}
+.hub-link.primary{background:var(--dourado);color:var(--verde);box-shadow:0 14px 30px -16px #d09e4066}
+.hub-link.secondary{background:#ffffff08;border:1px solid #d0a65c4d;color:var(--off-white)}
+.hub-link .hi{flex:none;width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:#00000014}
+.hub-link.secondary .hi{background:#ffffff12}
+.hub-link strong{display:block;font-family:var(--serif);font-weight:600;font-size:18px;line-height:1.25}
+.hub-link small{display:block;font-size:12.5px;opacity:.82;margin-top:2px;font-weight:400}
+.hub-link .arrow{margin-left:auto;opacity:.7;flex:none}
+.hub-minor{display:flex;gap:10px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.hub-minor a{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:1px solid #ffffff22;color:#cfe0d3;text-decoration:none;font-size:13px;transition:border-color .2s,color .2s}
+.hub-minor a:hover{border-color:var(--dourado);color:var(--off-white)}
+.hub-foot{margin-top:52px;font-size:11.5px;color:#9db5a3}
+.hub-foot a{color:var(--dourado)}
+@media(max-width:480px){.hub-inner{padding:56px 20px 64px}.hub-brand{font-size:29px}}
+
+/* LP de curso: passos, garantia, card de preço */
+.steps-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step-card{background:var(--off-white);border:1px solid var(--line);padding:30px 26px;text-align:center}
+.step-card .n{font-family:var(--serif);font-size:15px;color:var(--dourado);margin-bottom:10px}
+.step-card h3{font-size:19px}
+.step-card p{color:var(--muted);font-size:14.5px}
+
+.price-wrap{background:var(--verde);color:var(--off-white);padding:72px 0}
+.price-card{max-width:420px;margin:0 auto;text-align:center;background:#ffffff08;border:1px solid #d0a65c4d;border-radius:16px;padding:44px 36px}
+.price-card .eyebrow{color:var(--dourado)}
+.price-card h3{color:var(--off-white);font-size:24px}
+.price-val{font-family:var(--serif);font-size:52px;font-weight:700;color:var(--dourado);margin:14px 0 6px}
+.price-note{font-size:13px;color:#cfe0d3;margin-bottom:26px}
+.price-card .btn{width:100%;text-align:center;background:var(--dourado);border-color:var(--dourado);color:var(--verde);font-weight:600}
+.price-card .btn:hover{background:var(--off-white);border-color:var(--off-white)}
+.price-guarantee{margin-top:18px;font-size:12.5px;color:#9db5a3}
+
+.instructor{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px;align-items:center}
+.instructor-ph{aspect-ratio:4/5;border-radius:8px;background:linear-gradient(160deg,var(--nude) 0%,var(--dourado) 100%);opacity:.5}
+
+@media(max-width:820px){.steps-3{grid-template-columns:1fr}.instructor{grid-template-columns:1fr}}
