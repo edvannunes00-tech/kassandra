@@ -98,7 +98,7 @@ h3{font-size:20px;margin-bottom:8px;font-weight:600}
 .narrow{max-width:62ch;margin-bottom:22px}
 
 /* portfólio placeholder */
-.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 .pf-tile{aspect-ratio:4/5;border-radius:4px;background:linear-gradient(160deg,var(--nude) 0%,var(--dourado) 100%);opacity:.55}
 .pf-tile:nth-child(3n+1){background:linear-gradient(160deg,var(--bege) 0%,var(--nude-2) 100%)}
 .pf-tile:nth-child(4n+2){background:linear-gradient(160deg,var(--nude-2) 0%,var(--verde) 100%);opacity:.35}
