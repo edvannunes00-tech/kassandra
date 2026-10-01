@@ -169,7 +169,6 @@ footer span{color:#a9b5a9;font-size:12.5px}
 @media(max-width:820px){
  .wrap{padding:0 22px}
  .burger{display:flex}
- .nav-cta{display:none}
  .top-in{height:68px}
  .brand{font-size:19px}
  .brand small{font-size:9px}
@@ -231,3 +230,8 @@ footer span{color:#a9b5a9;font-size:12.5px}
 .instructor-ph{aspect-ratio:4/5;border-radius:8px;background:linear-gradient(160deg,var(--nude) 0%,var(--dourado) 100%);opacity:.5}
 
 @media(max-width:820px){.steps-3{grid-template-columns:1fr}.instructor{grid-template-columns:1fr}}
+
+/* WhatsApp flutuante — discreto, sem o verde padrão */
+.wa-float{position:fixed;right:20px;bottom:20px;width:54px;height:54px;border-radius:50%;background:var(--verde);color:var(--off-white);display:grid;place-items:center;box-shadow:0 8px 22px -4px #0005;z-index:90;transition:transform .25s var(--ease,ease)}
+.wa-float:hover{transform:translateY(-2px) scale(1.04);background:var(--dourado);color:var(--verde)}
+@media(max-width:700px){.wa-float{right:14px;bottom:14px;width:50px;height:50px}}
